@@ -8,8 +8,7 @@ class App extends Component {
 
     this.state = {
       charNum: 0,
-      num: ""
-    }
+    };
 
   }
 
@@ -22,11 +21,10 @@ class App extends Component {
     );
   }
 
-  charCounter(event) {
-    let charNum = event.target.value.length;
+  charCounter(e) {
+  
     this.setState({
-      num: event.target.value,
-      charNum: charNum
+      charNum:  e.target.value.length
     });
   }
 }
